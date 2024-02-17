@@ -3,11 +3,55 @@ body {
   color: #434455;
   background-color: #fff;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0;
+}
 
 .header {
+  padding: 24px 0;
+}
+.header-container {
+  display: flex;
 }
 
 .header_navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 332px;
+  justify-content: space-between;
+}
+
+.header-nav-logo {
+  display: flex;
+  align-items: center;
 }
 
 .two-logo {
@@ -24,6 +68,9 @@ body {
 }
 
 .header-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-nav-item {
@@ -44,6 +91,9 @@ body {
 }
 
 .adress-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .adress-item {
@@ -59,19 +109,30 @@ body {
 }
 
 .hero {
+  padding: 188px 0px;
   background-color: #2e2f42;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
 .hero-title {
-  text-align: center;
   color: #fff;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
 }
 
 .hero-btn {
+  border-radius: 4px;
   background-color: #4d5ae5;
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -79,7 +140,10 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  padding: 16px 32px;
   cursor: pointer;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -94,9 +158,12 @@ body {
 }
 
 .chapters-list {
+  display: flex;
+  gap: 24px;
 }
 
 .chapters-item {
+  width: calc((100% - 72px) / 3);
 }
 
 .chapters-subtitle {
@@ -105,6 +172,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .chapters-description {
@@ -120,22 +188,29 @@ body {
 
 .team-title {
   text-align: center;
+
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
-.team-item {
+.box-team {
   background-color: #fff;
+  padding: 32px 16px;
+  text-align: center;
 }
 
 .team-image {
+  display: block;
 }
 
 .team-subtitle {
@@ -144,6 +219,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-description {
@@ -164,15 +240,22 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .portfolio-item {
+  border: 1px solid var(--cornflower);
+  width: calc(100% - 144px) / 3;
 }
 
 .portfolio-image {
+  display: block;
 }
 
 .portfolio-subtitle {
@@ -181,6 +264,10 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.box-portfolio {
+  padding: 32px 0 32px 16px;
 }
 
 .portfolio-description {
@@ -192,6 +279,7 @@ body {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-description {
@@ -199,6 +287,8 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
 }
 .span-two-logo {
   color: #f4f4fd;
